@@ -18,7 +18,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('filer/min-max','Api\Frontend\Loose\LooseFilterController@getLooseFilter');
+Route::get('filter/min-max','Api\Frontend\Loose\LooseFilterController@getLooseFilter');
 Route::get('filter/loose', 'Api\Frontend\Loose\LooseFilterController@getLooseFilter');
 Route::get('detail/{slug}', 'Api\Frontend\Loose\LooseDetailController@getLooseDetail');
 Route::get('detailbyid/{id}', 'Api\Frontend\Loose\LooseDetailController@getLooseDetailById');
